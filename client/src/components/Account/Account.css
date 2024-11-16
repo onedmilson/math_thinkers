@@ -1,0 +1,79 @@
+/* Estilo para o container dos botões */
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os botões quebrem para a linha seguinte */
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  gap: 20px; /* Espaçamento entre os botões */
+  margin-bottom: 20px;
+  padding-top: 40px; /* Adiciona um padding no topo para afastar dos elementos acima */
+  align-items: center; /* Alinha os itens verticalmente no centro */
+  text-align: center; /* Centraliza o conteúdo dentro do container */
+  min-height: 300px; /* Garante que a área tenha altura mínima */
+}
+
+/* Estilo para cada botão */
+.category-button {
+  background-color: #7e9eff;
+  color: white;
+  padding: 15px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Garante que os itens sejam tratados como blocos de linha */
+  width: 200px; /* Largura fixa para os botões */
+  margin: 10px; /* Adiciona uma pequena margem ao redor dos botões */
+}
+
+/* Efeito hover para os botões */
+.category-button:hover {
+  background-color: #5c7bd9;
+}
+
+/* Estilo para os botões desabilitados */
+.category-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Estilo para o container do quiz */
+.quiz-container {
+  margin-top: 20px;
+}
+
+/* Estilo para o resumo do quiz */
+.quiz-summary {
+  text-align: center;
+}
+
+/* Estilo para o botão de reset */
+.reset-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #7e9eff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito hover para o botão de reset */
+.reset-button:hover {
+  background-color: #5c7bd9;
+}
+
+/* Certificando que os botões vão quebrar em duas colunas em telas maiores */
+@media (min-width: 600px) {
+  .category-button {
+    width: calc(50% - 10px); /* Cada botão ocupa 50% da largura da tela, com o espaçamento entre eles */
+  }
+}
+
+/* Para telas menores que 600px, os botões ocupam toda a largura da tela */
+@media (max-width: 600px) {
+  .category-button {
+    width: 100%; /* Os botões ocupam toda a largura disponível */
+  }
+}
