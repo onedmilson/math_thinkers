@@ -14,7 +14,7 @@ const Home = () => {
             words={[
               'Desafie-se com nossos testes matemáticos.',
               'Aprimore suas habilidades lógicas.',
-              'Explore o mundo dos números com diversão!',
+              'Desenvolva sua interpretação matemática com atividades e desafios!',
             ]}
             loop={true}
             cursor
